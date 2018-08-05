@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="059e4e8b-f8a2-4b93-9b9a-d3928a7e2cb3" name="VEYTIA@VEYTIA 2018-08-05 14:33:04" runUser="VEYTIA\VEYTIA" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2018-08-05T14:33:04.8058686-05:00" queuing="2018-08-05T14:33:04.8058686-05:00" start="2018-08-05T14:33:04.8138641-05:00" finish="2018-08-05T14:33:04.8698311-05:00" />
+  <TestSettings name="default" id="623b4b71-4801-484b-bf86-06758eedbb62">
+    <Execution>
+      <TestTypeSpecific />
+    </Execution>
+    <Deployment runDeploymentRoot="VEYTIA_VEYTIA 2018-08-05 14_33_04" />
+    <Properties />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ef4de68f-a010-4af9-96e4-3da9396e56b7" testId="c3218dcb-6154-9b27-b289-d078ee956064" testName="GetTheBestHotelPrices" computerName="VEYTIA" duration="00:01:55.0408285" startTime="2018-08-05T14:31:09.1727982-05:00" endTime="2018-08-05T14:33:04.3479245-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ef4de68f-a010-4af9-96e4-3da9396e56b7">
+      <Output>
+        <StdOut>-&gt; Using app.config
+Given Home Page is displayed
+
+
+-&gt; done: Disney_TestSteps.GivenHomePageIsDisplayed() (27.1s)
+And User selects the Check in Date
+-&gt; done: Disney_TestSteps.GivenUserSelectsTheCheckInDate() (4.5s)
+And User selects the Check out Date
+-&gt; done: Disney_TestSteps.GivenUserSelectsTheCheckOutDate() (1.3s)
+And User selects Adults or Childrens
+-&gt; done: Disney_TestSteps.GivenUserSelectsAdultsOrChildrens() (2.8s)
+And User click on Find Prices button
+-&gt; done: Disney_TestSteps.GivenUserClickOnFindPricesButton() (14.5s)
+When User selects the low Price of the resort
+-&gt; done: Disney_TestSteps.WhenUserSelectsTheLowPriceOfTheResort() (2.6s)
+And User selects Package option
+-&gt; done: Disney_TestSteps.WhenUserSelectsPackageOption() (19.0s)
+And User selects the Number of Parck Days
+-&gt; done: Disney_TestSteps.WhenUserSelectsTheNumberOfParckDays() (27.8s)
+Then the result should be on the screen
+-&gt; error: Timed out after 15 seconds</StdOut>
+        <ErrorInfo>
+          <Message>Test method DisneyWorld.Test.DisneyTestFeatureFeature.GetTheBestHotelPrices threw exception: 
+OpenQA.Selenium.WebDriverTimeoutException: Timed out after 15 seconds ---&gt; OpenQA.Selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='pricingSimple clearfix']"}
+  (Session info: chrome=67.0.3396.99)
+  (Driver info: chromedriver=2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab),platform=Windows NT 10.0.17134 x86_64)</Message>
+          <StackTrace>    en OpenQA.Selenium.Remote.RemoteWebDriver.UnpackAndThrowOnError(Response errorResponse)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(String mechanism, String value)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElementByXPath(String xpath)
+   en OpenQA.Selenium.By.&lt;&gt;c__DisplayClass19_0.&lt;XPath&gt;b__0(ISearchContext context)
+   en OpenQA.Selenium.By.FindElement(ISearchContext context)
+   en OpenQA.Selenium.Remote.RemoteWebDriver.FindElement(By by)
+   en OpenQA.Selenium.Support.UI.ExpectedConditions.&lt;&gt;c__DisplayClass6_0.&lt;ElementExists&gt;b__0(IWebDriver driver)
+   en OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+ --- End of inner exception stack trace ---
+    en OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)
+   en OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)
+   en Common.TestBase.FindElementss(By By) en C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\Common\TestBase.cs:línea 126
+   en Common.TestBase.GetDriverByXpath(String xp) en C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\Common\TestBase.cs:línea 46
+   en DisneyWorld.UI.Cart.get_Pricess_txt() en C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\DisneyWorld\UI\Cart.cs:línea 17
+   en DisneyWorld.Test.Disney_TestSteps.ThenTheResultShouldBeOnTheScreen() en C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\DisneyWorld\Test\Disney_TestSteps.cs:línea 175
+   en lambda_method(Closure , IContextManager )
+   en TechTalk.SpecFlow.Bindings.BindingInvoker.InvokeBinding(IBinding binding, IContextManager contextManager, Object[] arguments, ITestTracer testTracer, TimeSpan&amp; duration)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStepMatch(BindingMatch match, Object[] arguments)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.ExecuteStep(IContextManager contextManager, StepInstance stepInstance)
+   en TechTalk.SpecFlow.Infrastructure.TestExecutionEngine.OnAfterLastStep()
+   en TechTalk.SpecFlow.TestRunner.CollectScenarioErrors()
+   en DisneyWorld.Test.DisneyTestFeatureFeature.ScenarioCleanup()
+   en DisneyWorld.Test.DisneyTestFeatureFeature.GetTheBestHotelPrices() en C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\DisneyWorld\Test\Disney_Test.feature:línea 13
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="GetTheBestHotelPrices" storage="c:\users\veytia\desktop\desktop\aa_automationcsharerp\disneyworld\disneyworld\bin\debug\disneyworld.dll" id="c3218dcb-6154-9b27-b289-d078ee956064">
+      <Execution id="ef4de68f-a010-4af9-96e4-3da9396e56b7" />
+      <TestMethod codeBase="C:\Users\VEYTIA\Desktop\Desktop\AA_AutomationCSHARERP\DisneyWorld\DisneyWorld\bin\Debug\DisneyWorld.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter" className="DisneyWorld.Test.DisneyTestFeatureFeature" name="GetTheBestHotelPrices" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="c3218dcb-6154-9b27-b289-d078ee956064" executionId="ef4de68f-a010-4af9-96e4-3da9396e56b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" passed="0" failed="1" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+</TestRun>
