@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8698bfe5-4fcd-4547-bcbb-3e4b2d8ebaf6" name="Prabhat@CHANGEME 2013-01-27 17:52:55" runUser="CHANGEME\Prabhat" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="4e0c75e1-f8dc-4669-9936-ba4ec6452246">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Prabhat_CHANGEME 2013-01-27 17_52_55">
+      <DeploymentItem filename="c:\documents and settings\prabhat\my documents\visual studio 2010\Projects\ConsoleApplication4\ConsoleApplication4\bin\Debug\ConsoleApplication4.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-27T17:52:55.1875000+05:30" queuing="2013-01-27T17:52:56.2343750+05:30" start="2013-01-27T17:52:56.4062500+05:30" finish="2013-01-27T17:52:57.3125000+05:30" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="AddTest" storage="c:\documents and settings\prabhat\my documents\visual studio 2010\projects\consoleapplication4\testproject1\bin\debug\testproject1.dll" id="cb503a53-e450-2b3d-7447-5431a475e639">
+      <Execution id="96a91b03-6b97-4495-8173-6389e05bcc7c" />
+      <TestMethod codeBase="c:/documents and settings/prabhat/my documents/visual studio 2010/Projects/ConsoleApplication4/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.TestMeTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="cb503a53-e450-2b3d-7447-5431a475e639" executionId="96a91b03-6b97-4495-8173-6389e05bcc7c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="96a91b03-6b97-4495-8173-6389e05bcc7c" testId="cb503a53-e450-2b3d-7447-5431a475e639" testName="AddTest" computerName="CHANGEME" duration="00:00:00.0701717" startTime="2013-01-27T17:52:56.4375000+05:30" endTime="2013-01-27T17:52:57.1875000+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="96a91b03-6b97-4495-8173-6389e05bcc7c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.TestMeTest.AddTest() in c:\documents and settings\prabhat\my documents\visual studio 2010\Projects\ConsoleApplication4\TestProject1\TestMeTest.cs:line 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

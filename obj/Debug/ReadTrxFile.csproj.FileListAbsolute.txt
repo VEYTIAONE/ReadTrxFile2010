@@ -1,0 +1,6 @@
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\bin\ReadTrxFile.dll.config
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\bin\ReadTrxFile.dll
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\bin\ReadTrxFile.pdb
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\obj\Debug\ReadTrxFile.csprojResolveAssemblyReference.cache
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\obj\Debug\ReadTrxFile.dll
+C:\Users\VEYTIA\Downloads\ReadTrxFile2010\obj\Debug\ReadTrxFile.pdb
